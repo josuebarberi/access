@@ -1,0 +1,158 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, table, td, th {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f0e1; /* Color cálido, beige */
+  color: #4b3832; /* Marrón oscuro */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #4b3832;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+}
+
+/* Botón de regresar */
+.boton {
+  display: inline-block;
+  background-color: #8b5d33; /* Marrón café */
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 1rem 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #6b4226; /* Marrón más oscuro */
+}
+
+/* Tabla */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+thead {
+  background-color: #8b5d33;
+  color: #fff;
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f2e7d5; /* Tono claro al pasar el ratón */
+}
+
+th:last-child, td:last-child {
+  text-align: center;
+}
+
+.imgtable {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.imgtable:hover {
+  transform: scale(1.1);
+}
+
+/* Enlaces para agregar, actualizar y eliminar productos */
+a img {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+a:hover img {
+  filter: brightness(1.2);
+}
+
+/* Fondo de encabezado */
+.row.bg-dark {
+  background-color: #4b3832;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.bg-dark h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}@media (max-width: 768px) {
+  /* Ajustar el contenedor principal */
+  .container {
+    padding: 1rem;
+  }
+
+  /* Encabezado */
+  .row.bg-dark {
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    text-align: center;
+  }
+
+  .row.bg-dark h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .boton {
+    margin: 0.5rem auto;
+  }
+
+  /* Tabla */
+  table {
+    font-size: 0.9rem; /* Reducir ligeramente el texto */
+  }
+
+  th, td {
+    padding: 0.5rem; /* Reducir espacio para celdas */
+  }
+
+  /* Hacer la tabla desplazable horizontalmente */
+  .table-container {
+    overflow-x: scroll;
+  }
+
+  /* Íconos */
+  .imgtable {
+    width: 20px; /* Reducir el tamaño de los íconos */
+    height: 20px;
+  }
+}

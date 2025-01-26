@@ -1,0 +1,101 @@
+/* General Reset */
+body, h1, p, form, input, label, button, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f0e1; /* Fondo beige claro */
+  color: #4b3832; /* Marrón oscuro */
+  padding: 1rem;
+}
+
+/* Botón de regresar */
+.regresar {
+  background-color: #8b5d33; /* Marrón café */
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  width: 120px;
+  transition: background-color 0.3s ease;
+}
+
+.regresar:hover {
+  background-color: #6b4226; /* Marrón más oscuro */
+}
+
+/* Contenedor del formulario */
+.formulario {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+/* Estilos para los campos de entrada */
+.inputD {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #4b3832; /* Marrón oscuro */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fdfaf6; /* Beige claro */
+  color: #4b3832; /* Marrón oscuro */
+}
+
+input[type="text"]::placeholder {
+  color: #8b5d33;
+}
+
+/* Botón de registro */
+button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #8b5d33; /* Marrón café */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6b4226; /* Marrón más oscuro */
+}
+@media (max-width: 768px) {
+  .formulario {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .regresar {
+    width: 100%;
+    text-align: center;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}

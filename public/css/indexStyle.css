@@ -1,0 +1,10 @@
+.comprar{
+	margin-top:1rem;
+	background-color:rgb(218, 159, 91);
+	padding:.3rem .5rem;
+	border-radius:5px;
+	transition: all 1s ease-in-out;
+}.comprar:hover{
+	transform:translateY(-3px);
+	box-shadow:0 7px 10px rgba(0,0,0,.4);
+}
